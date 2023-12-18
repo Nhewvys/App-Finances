@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Aplicanttion Finance</title>
+</head>
+
+<body>
+    <nav class="sidebar">
+        <ul>
+            <div class="nav_logo">
+                    <a href="#"><img src="android-chrome-192x192.png" alt="logo-marca"><h1>Nhewvys</h1></a>  
+            </div>
+
+            <div class="sidemenu-main">
+                <li class="active">
+                    <a href="#"><i class="fa-solid fa-house" id="Dashboard"></i>Dashboard</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-brands fa-github" id="Project-Github"></i></i>Project Github</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-piggy-bank" id="Finances"></i>Finances</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-list-check" id="to-do-list"></i>To-Do list</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-chart-pie" id="Analytics"></i>Analytics</a>
+                </li>
+            </div>
+
+            <div class="nav_settings">
+                <li>
+                    <a href="#"><i class="fa-solid fa-gear"></i>Settings</a>
+                </li>
+                <li>
+                    <a href="#" id="Logout"><i class="fa-solid fa-right-from-bracket"></i>Logout</a>
+                </li>
+            </div>
+        </ul>
+    </nav>
+
+    <section class="bx-stic Dashboard" id="Dashboard">
+        <header class="header-content">
+            <i class="fa-solid fa-bars"></i>
+            <a href="#" class="nav_link">Categories</a>
+            <form>
+                <input type="search" placeholder="Search...">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <div class="header_perfil">
+                <div class="toggle-switch">
+                    <input class="toggle-input" id="toggle" type="checkbox" />
+                    <label class="toggle-label" for="toggle"></label>
+                  </div>
+                                    
+                <div class="notification"><i class="fa-solid fa-bell"></i><span id="num-notification">8</span></div>
+                <div class="header_icon_perfil">
+                    <img src="IMG_20231105_002450.jpg" alt="icon-perfil">
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="head-title">
+				<div class="left">
+					<h1>Dashboard</h1>
+					<ul>
+						<li>
+							<a href="#">Dashboard</a>
+						</li>
+						<li><i class="fa-solid fa-chevron-right"></i></li>
+						<li>
+							<a class="active" href="#">Home</a>
+						</li>
+					</ul>
+				</div>
+				<a href="#" class="btn-download">
+					<i class="fa-solid fa-cloud-arrow-down"></i>
+					<span class="text">Download PDF</span>
+				</a>
+			</div>
+            <ul class="box-info">
+				<li>
+					<i class="bx fa-solid fa-brazilian-real-sign"></i></i>
+					<span class="text">
+						<h3>1020</h3>
+						<p>Total Sales</p>
+					</span>
+				</li>
+				<li>
+					<i class="bx fa-solid fa-down-long"></i></i>
+					<span class="text">
+						<h3>2834</h3>
+						<p>Expensives</p>
+					</span>
+				</li>
+				<li>
+					<i class="bx fa-brands fa-trade-federation"></i>
+					<span class="text">
+						<h3>$2543</h3>
+						<p>Other</p>
+					</span>
+				</li>
+			</ul>
+        </main>
+
+    </section>
+    
+    <section class="bx-stic Project-Github" id="Project-Github">
+        <header class="header-content"></header>
+    </section>
+
+    <section class="bx-stic Project-Github" id="Finances">
+        <header class="header-content"></header>
+    </section>
+
+    <section class="bx-stic Project-Github" id="to-do-list">
+        <header class="header-content"></header>
+    </section>
+
+    <section class="bx-stic Project-Github" id="Analytics">
+        <header class="header-content"></header>
+    </section>
+</body>
+
+</html>
