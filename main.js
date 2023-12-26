@@ -3,7 +3,7 @@ const sectionCode = urlParams.get('section-code');
 
 const sections = document.querySelectorAll('section');
 const allSideMenu = document.querySelectorAll('.sidebar ul .sidemenu-main li');
-const menu = document.querySelector('.fa-solid.fa-bars');
+const allMenu = document.querySelectorAll('.fa-solid.fa-bars');
 const sidebar = document.querySelector('.sidebar');
 
 function showSection(sectionId) {
@@ -42,6 +42,11 @@ function handleSideMenuItemClick(event) {
 function handleMenuClick() {
     sidebar.classList.toggle('hide');
 }
+document.addEventListener('keydown', function(event) {
+    if (event.ctrlKey && event.key === 'b') {
+    handleMenuClick()
+    }
+});
 
 // Show default section or section from URL
 if (sectionCode) {
@@ -54,6 +59,6 @@ if (sectionCode) {
 }
 
 // Event listeners
-menu.addEventListener('click', handleMenuClick);
+allMenu.forEach(menu => menu.addEventListener('click', handleMenuClick))
 allSideMenu.forEach(item => item.addEventListener('click', handleSideMenuItemClick));
 
